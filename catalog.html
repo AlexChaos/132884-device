@@ -38,33 +38,36 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
       </ul>
-      <section class="filters">
-        <h2 class="filter-title">Фильтр:</h2>
-        <!--Здесь будет форма-->
-      </section>
 
-      <section class="sorting">
-        <h2 class="sorting-title">Сортировка:</h2>
-        <ul class="sorting items">
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По популярности</a></li>
-        </ul>
-      </section>
-
-      <article class="catalog">
+      <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
+        <div class="filters">
+          <h2 class="filter-title">Фильтр:</h2>
+          <!--Здесь будет форма-->
+        </div>
+
+        <div class="sorting">
+          <h2 class="sorting-title">Сортировка:</h2>
+          <ul class="sorting items">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+          </ul>
+        </div>
+
+        <article class="catalog-item">
+          <h2 class="visually-hidden">Каталог товаров</h2>
           <p class="catalog-item-image">
             <a href="#">
               <img src="img/amateur-stick" width="360" height="380" alt="Любительская селфи-палка">
             </a>
           </p>
           <p class="catalog-item-price">
-            <a class="button" href="#">Любительская селфи-палка</a>
-            <span class="price">500 руб.</span>
-      </article>
+          <a class="button" href="#">Любительская селфи-палка</a>
+          <span class="price">500 руб.</span>
+        </article>
 
-      <article class="catalog">
+      <article class="catalog-item">
         <h2 class="visually-hidden">Каталог товаров</h2>
           <p class="catalog-item-image">
             <a href="#">
@@ -77,7 +80,7 @@
           </p>
         </article>
 
-        <article class="catalog">
+        <article class="catalog-item">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <p class="catalog-item-image">
             <a href="#">
@@ -90,7 +93,7 @@
           </p>
         </article>
 
-        <article class="catalog">
+        <article class="catalog-item">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <p class="catalog-item-image">
             <a href="#">
@@ -103,7 +106,7 @@
           </p>
       </article>
 
-      <section class="pages">
+      <div class="pages">
         <h2 class="visually-hidden">Навигация по страницам каталога</h2>
         <button class="prev" type="button">Назад</button>
         <ol class="pagination-list">
@@ -112,6 +115,8 @@
           <li class="pagination-item"><a href="#">3</a></li>
         </ol>
         <button class="next" type="button">Вперед</button>
+      </div>
+
       </section>
     </main>
 
