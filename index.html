@@ -8,14 +8,21 @@
     <header class="header-main">
       <a class="header-main-logo">device</a>
       <ul class="header-service-list">
-        <li><a href="#">Поиск по сайту</a></li>
-        <li><a href="#">Войти</a></li>
+        <li>
+          <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
+        </li>
+        <li>
+          <button class="login" type="submit">Войти</button>
+        </li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <button name="button">+</button>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -233,7 +240,7 @@
           <li><a>Автотрейдинг</a></li>
           <li><a>ЖелДорЭкспедиция</a></li>
         </ul>
-        <a href="#">Подробнее о нас</a>
+        <button class="button" type="button">Подробнее о нас</button>
       </section>
 
       <section class="contact">
@@ -242,7 +249,7 @@
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
         </p>
         <img src="img/map.jpg" width="560" height="222" alt="Карта">
-        <a href="#">Напишите нам</a>
+        <button class="button" type="button">Напишите нам</button>
       </section>
     </main>
     <footer class="main-footer">
@@ -254,14 +261,14 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="footer-social">
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-fb" href="#" aria-label="Фейсбук">Фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#" aria-label="Инстаграм">Инстаграм</a>
+        <a class="social-btn social-btn-tw" href="#" aria-label="Твиттер">Твиттер</a>
       </div>
       <div class="user-block">
-        <a class="footer-login" href="#">Войти</a>
-        <a class="footer-compare" href="#">Сравнить</a>
-        <a class="footer-basket" href="#">Корзина</a>
+          <a class="footer-login" href="#">Войти</a>
+          <a class="footer-compare" href="#">Сравнить</a>
+          <a class="footer-basket" href="#">Корзина</a>
       </div>
       <p class="phone">Тел.: +7 (495) 495-95-95</p>
       <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
@@ -269,15 +276,32 @@
 
     <section class="modal-contact">
       <h2 class="visually-hidden">Форма связи</h2>
-      <span class="modal-close">x</span>
-      <!--Дальше форма-->
+      <button class="modal-close" type="button">Закрыть</button>
+      <!--Форма-->
+      <form class="communication-form" name="modal-form" action="#" method="post">
+        <p class="communication-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
+        </p>
+        <p class="communication-item">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" id="email" placeholder="Для отправки ответа" required>
+        </p>
+        <p class="communication-item">
+          <label for="textarea">Текст письма:</label>
+          <textarea id="textarea" name="textarea" rows="10" cols="50" placeholder="В свободной форме" required></textarea>
+        </p>
+        <p class="communication-item">
+          <button class="button" type="submit">Отправить</button>
+        </p>
+      </form>
     </section>
 
     <section class="modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map-popup.jpg" width="960" height="559" alt="Карта">
+      <img src="img/map-popup.jpg" width="960" height="559" alt="улица Строителей, 15">
       <!--Интерактивная карта-->
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

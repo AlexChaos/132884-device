@@ -8,14 +8,22 @@
     <header class="header-main">
       <a class="header-main-logo" href="#">device</a>
       <ul class="header-service-list">
-        <li><a href="#">Поиск по сайту</a></li>
-        <li><a href="#">Валерий Петухов выйти</a></li>
+        <li>
+          <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
+        </li>
+        <li>
+          <label for="authorization">Валерий Петухов</label>
+          <button class="login" type="submit" name="authorization" id="authorization">Выйти</button>
+        </li>
         <li><a href="#">Сравнить</a></li>
         <li><a href="#">Корзина</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <button name="button">+</button>
+          </li>
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -39,9 +47,69 @@
         <li><a href="#">Моноподы для селфи</a></li>
       </ul>
 
-      <section class="filters">
+      <section class="filter">
         <h2 class="filter-title">Фильтр:</h2>
-        <!--Здесь будет форма-->
+        <!--Форма-->
+        <form class="filter-form" name="filters-form" action="#" method="get">
+          <fieldset>
+            <legend>Стоимость</legend>
+            <ul>
+              <li class="filter-option">
+                <label for="price"></label>от 0
+                <input class="visually-hidden filter-input filter" id="price" type="range" name="radio" step="1">до 5000
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="black" type="checkbox" name="black" checked>
+                <label for="black">Черный</label>
+              </li>
+            </ul>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="white" type="checkbox" name="white">
+                <label for="white">Белый</label>
+              </li>
+            </ul>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="blue" type="checkbox" name="blue" checked>
+                <label for="blue">Синий</label>
+              </li>
+            </ul>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="red" type="checkbox" name="red" checked>
+                <label for="red">Красный</label>
+              </li>
+            </ul>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="pink" type="checkbox" name="pink">
+                <label for="pink">Розовый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="one" type="radio" name="variant" value="yes" checked>
+                <label for="one">Есть</label>
+              </li>
+            </ul>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter" id="two" type="radio" name="variant" value="no">
+                <label for="two">Нет</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -63,8 +131,9 @@
             </a>
           </p>
           <p class="catalog-item-price">
-          <a class="button" href="#">Любительская селфи-палка</a>
-          <span class="price">500 руб.</span>
+            <a class="button" href="#">Любительская селфи-палка</a>
+            <span class="price">500 руб.</span>
+          </p>
         </article>
 
         <article class="catalog-item">
