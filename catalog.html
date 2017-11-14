@@ -53,12 +53,10 @@
         <form class="filter-form" name="filters-form" action="#" method="get">
           <fieldset>
             <legend>Стоимость</legend>
-            <ul>
-              <li class="filter-option">
-                <label for="price"></label>от 0
-                <input class="visually-hidden filter-input filter" id="price" type="range" name="radio" step="1">до 5000
-              </li>
-            </ul>
+            <div class="filter-option">
+              <label for="price"></label>от 0
+              <input class="visually-hidden filter-input filter" id="price" type="range" name="radio" step="1">до 5000
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -67,26 +65,18 @@
                 <input class="visually-hidden filter-input filter" id="black" type="checkbox" name="black" checked>
                 <label for="black">Черный</label>
               </li>
-            </ul>
-            <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter" id="white" type="checkbox" name="white">
                 <label for="white">Белый</label>
               </li>
-            </ul>
-            <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter" id="blue" type="checkbox" name="blue" checked>
                 <label for="blue">Синий</label>
               </li>
-            </ul>
-            <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter" id="red" type="checkbox" name="red" checked>
                 <label for="red">Красный</label>
               </li>
-            </ul>
-            <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter" id="pink" type="checkbox" name="pink">
                 <label for="pink">Розовый</label>
@@ -100,8 +90,6 @@
                 <input class="visually-hidden filter-input filter" id="one" type="radio" name="variant" value="yes" checked>
                 <label for="one">Есть</label>
               </li>
-            </ul>
-            <ul>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter" id="two" type="radio" name="variant" value="no">
                 <label for="two">Нет</label>
@@ -189,26 +177,41 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <a class="footer-logo">device</a>
-      <p class="text-address">г. Москва, ул. Строителей, 15</p>
-      <ul class="footer-navigation">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <div class="footer-social">
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-      </div>
-      <div class="user-block">
-        <a class="footer-login" href="#">Войти</a>
-        <a class="footer-compare" href="#">Сравнить</a>
-        <a class="footer-basket" href="#">Корзина</a>
-      </div>
-      <p class="phone">Тел.: +7 (495) 495-95-95</p>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+    <footer>
+      <section class="footer-user">
+        <h2 class="visually-hidden">Для пользователя</h2>
+        <span class="logo-footer">DEVICE</span>
+        <ul class="footer-user-menu">
+          <li>
+            <a href="#">Войти</a>
+            <a href="#">Сравнить</a>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-conditions">
+        <h2 class="visually-hidden">Условия покупки</h2>
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul class="footer-conditions-menu">
+          <li>
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+      </section>
+      <section class="footer-social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social-buttons">
+          <li>
+            <a href="#" aria-label="Фейсбук">Фейсбук</a>
+            <a href="#" aria-label="Инстаграм">Инстаграм</a>
+            <a href="#" aria-label="Твиттер">Твиттер</a>
+          </li>
+        </ul>
+        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      </section>
     </footer>
   </body>
 </html>
