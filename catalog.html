@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-main">
@@ -10,6 +12,7 @@
       <ul class="header-service-list">
         <li>
           <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
+          <a class="search" href="#">Найти</a>
         </li>
         <li>
           <label for="authorization">Валерий Петухов</label>
@@ -34,7 +37,7 @@
           <li><a href="#">Экшн-камеры</a></li>
           <li><a href="#">Фитнес-браслеты</a></li>
           <li><a href="#">Умные часы</a></li>
-          <li><a href="#">вадрокоптеры</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </nav>
     </header>
@@ -54,31 +57,31 @@
           <fieldset>
             <legend>Стоимость</legend>
             <div class="filter-option">
-              <label for="price"></label>от 0
-              <input class="visually-hidden filter-input filter" id="price" type="range" name="radio" step="1">до 5000
+              <label for="price"></label><span>от 0</span>
+              <input class="filter-input filter" id="price" type="range" name="radio" step="1"><span>до 5000</span>
             </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="black" type="checkbox" name="black" checked>
+                <input class="filter-input filter" id="black" type="checkbox" name="black" checked>
                 <label for="black">Черный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="white" type="checkbox" name="white">
+                <input class="filter-input filter" id="white" type="checkbox" name="white">
                 <label for="white">Белый</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="blue" type="checkbox" name="blue" checked>
+                <input class="filter-input filter" id="blue" type="checkbox" name="blue" checked>
                 <label for="blue">Синий</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="red" type="checkbox" name="red" checked>
+                <input class="filter-input filter" id="red" type="checkbox" name="red" checked>
                 <label for="red">Красный</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="pink" type="checkbox" name="pink">
+                <input class="filter-input filter" id="pink" type="checkbox" name="pink">
                 <label for="pink">Розовый</label>
               </li>
             </ul>
@@ -87,16 +90,16 @@
             <legend>Bluetooth</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="one" type="radio" name="variant" value="yes" checked>
+                <input class="filter-input filter" id="one" type="radio" name="variant" value="yes" checked>
                 <label for="one">Есть</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter" id="two" type="radio" name="variant" value="no">
+                <input class="filter-input filter" id="two" type="radio" name="variant" value="no">
                 <label for="two">Нет</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="filter-button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -104,7 +107,7 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <div class="sorting">
           <h2 class="sorting-title">Сортировка:</h2>
-          <ul class="sorting items">
+          <ul class="sorting-items">
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По популярности</a></li>
@@ -119,7 +122,7 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <a class="button" href="#">Любительская селфи-палка</a>
+            <a class="catalog-description" href="#">Любительская селфи-палка</a>
             <span class="price">500 руб.</span>
           </p>
         </article>
@@ -132,7 +135,7 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <a class="button" href="#">Профессиональная селфи-палка</a>
+            <a class="catalog-description" href="#">Профессиональная селфи-палка</a>
             <span class="price">1500 руб.</span>
           </p>
         </article>
@@ -145,7 +148,7 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <a class="button" href="#">Непотопляемая селфи-палка</a>
+            <a class="catalog-description" href="#">Непотопляемая селфи-палка</a>
             <span class="price">2500 руб.</span>
           </p>
         </article>
@@ -158,7 +161,7 @@
             </a>
           </p>
           <p class="catalog-item-price">
-            <a class="button" href="#">селфи-палка "Следуй за мной"</a>
+            <a class="catalog-description" href="#">селфи-палка "Следуй за мной"</a>
             <span class="price">4900 руб.</span>
           </p>
         </article>
@@ -177,35 +180,44 @@
       </section>
     </main>
 
-    <footer>
-      <section class="footer-user">
-        <h2 class="visually-hidden">Для пользователя</h2>
-        <span class="logo-footer">DEVICE</span>
-        <ul class="footer-user-menu">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
+    <div class="footer-wrapper">
+      <footer>
+        <section class="footer-user">
+          <h2 class="visually-hidden">Для пользователя</h2>
+          <span class="logo-footer">DEVICE</span>
+          <ul class="footer-user-menu">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </section>
+        <section class="footer-conditions">
+          <h2 class="visually-hidden">Условия покупки</h2>
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-conditions-menu">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social-buttons">
+            <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
+            <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
+          </ul>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </section>
+      </footer>
+    </div>
+    <div class="item-overlay">
+      <section class="item-hover">
+        <h2 class="visually-hidden">Корзина</h2>
+        <button class="Basket">В корзину</button>
+        <p class="add-to">Добавить к сравнению</p>
       </section>
-      <section class="footer-conditions">
-        <h2 class="visually-hidden">Условия покупки</h2>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-conditions-menu">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social-buttons">
-          <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
-          <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
-          <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
-        </ul>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </section>
-    </footer>
+    </div>
   </body>
 </html>

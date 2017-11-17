@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-main">
@@ -10,6 +12,7 @@
       <ul class="header-service-list">
         <li>
           <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
+          <a class="search" href="#">Найти</a>
         </li>
         <li>
           <button class="login" type="submit">Войти</button>
@@ -33,7 +36,7 @@
           <li><a href="#">Экшн-камеры</a></li>
           <li><a href="#">Фитнес-браслеты</a></li>
           <li><a href="#">Умные часы</a></li>
-          <li><a href="#">вадрокоптеры</a></li>
+          <li><a href="#">Квадрокоптеры</a></li>
         </ul>
       </nav>
     </header>
@@ -49,7 +52,7 @@
             Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a href="#">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
         <!--здесь кнопки переключатели-->
           <div class="slider-control">
             <ul class="slider-switches">
@@ -92,7 +95,7 @@
             Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
           </p>
-          <a href="#">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
           <!--здесь кнопки переключатели-->
           <div class="slider-control">
             <ul class="slider-switches">
@@ -131,7 +134,7 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#">Подробнее</a>
+          <a class="button" href="#">Подробнее</a>
           <!--здесь кнопки переключатели-->
           <div class="slider-control">
             <ul class="slider-switches">
@@ -167,27 +170,27 @@
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="items-products">
           <li>
-            <img src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность">
+            <a class="products-link" href="#"><img class="active" src="img/popular-1.svg" width="97" height="55" alt="Виртуальная реальность"></a>
             <a href="#">Виртуальная реальность</a>
           </li>
           <li>
-            <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
+            <a class="products-link" href="#"><img class="active" src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи"></a>
             <a href="#">Моноподы для селфи</a>
           </li>
           <li>
-            <img src="img/popular-3.svg" width="71" height="87" alt="Экшн камера">
+            <a class="products-link" href="#"><img class="active" src="img/popular-3.svg" width="71" height="87" alt="Экшн камера"></a>
             <a href="#">Экшн-камеры</a>
           </li>
           <li>
-            <img src="img/popular-4.svg" width="107" height="65" alt="Фитнес браслет">
+            <a class="products-link" href="#"><img class="active" src="img/popular-4.svg" width="107" height="65" alt="Фитнес браслет"></a>
             <a href="#">Фитнес-браслеты</a>
           </li>
           <li>
-            <img src="img/popular-5.svg" width="56" height="98" alt="Умные часы">
+            <a class="products-link" href="#"><img class="active" src="img/popular-5.svg" width="56" height="98" alt="Умные часы"></a>
             <a href="#">Умные часы</a>
           </li>
           <li>
-            <img src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптер">
+            <a class="products-link" href="#"><img class="active" src="img/popular-6.svg" width="132" height="69" alt="Квадрокоптер"></a>
             <a href="#">Квадрокоптеры</a>
           </li>
         </ul>
@@ -195,9 +198,9 @@
 
       <section class="services">
         <ul class="services-list">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Кредит</a></li>
+          <li><a class="button" href="#">Доставка</a></li>
+          <li><a class="button" href="#">Гарантия</a></li>
+          <li><a class="button" href="#">Кредит</a></li>
         </ul>
 
         <div class="services-description">
@@ -281,59 +284,63 @@
       </section>
     </main>
 
-    <footer>
-      <section class="footer-user">
-        <h2 class="visually-hidden">Для пользователя</h2>
-        <span class="logo-footer">DEVICE</span>
-        <ul class="footer-user-menu">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
-      </section>
-      <section class="footer-conditions">
-        <h2 class="visually-hidden">Условия покупки</h2>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul class="footer-conditions-menu">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="social-buttons">
-          <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
-          <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
-          <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
-        </ul>
-        <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </section>
-    </footer>
+    <div class="footer-wrapper">
+      <footer>
+        <section class="footer-user">
+          <h2 class="visually-hidden">Для пользователя</h2>
+          <span class="logo-footer">DEVICE</span>
+          <ul class="footer-user-menu">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </section>
+        <section class="footer-conditions">
+          <h2 class="visually-hidden">Условия покупки</h2>
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-conditions-menu">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="social-buttons">
+            <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+            <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
+            <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
+          </ul>
+          <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </section>
+      </footer>
+    </div>
 
-    <section class="modal-contact">
-      <h2 class="visually-hidden">Форма связи</h2>
-      <button class="modal-close" type="button">Закрыть</button>
-      <!--Форма-->
-      <form class="communication-form" name="modal-form" action="#" method="post">
-        <p class="communication-item">
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
-        </p>
-        <p class="communication-item">
-          <label for="email">Ваш e-mail:</label>
-          <input type="email" id="email" placeholder="Для отправки ответа" required>
-        </p>
-        <p class="communication-item">
-          <label for="textarea">Текст письма:</label>
-          <textarea id="textarea" name="textarea" rows="10" cols="50" placeholder="В свободной форме" required></textarea>
-        </p>
-        <p class="communication-item">
-          <button class="button" type="submit">Отправить</button>
-        </p>
-      </form>
-    </section>
+    <div class="modal-wrapper">
+      <section class="modal-contact">
+        <h2 class="visually-hidden">Форма связи</h2>
+        <button class="modal-close" type="button">Закрыть</button>
+        <!--Форма-->
+        <form class="communication-form" name="modal-form" action="#" method="post">
+          <p class="communication-item">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
+          </p>
+          <p class="communication-item">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" placeholder="Для отправки ответа" required>
+          </p>
+          <p class="communication-item">
+            <label for="textarea">Текст письма:</label>
+            <textarea id="textarea" name="textarea" rows="10" cols="50" placeholder="В свободной форме" required></textarea>
+          </p>
+          <p class="communication-item">
+            <button class="button" type="submit">Отправить</button>
+          </p>
+        </form>
+      </section>
+    </div>
 
     <section class="modal-map">
       <h2 class="visually-hidden">Карта</h2>
