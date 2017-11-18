@@ -543,16 +543,11 @@ img {
   letter-spacing: 0.14px;
 }
 
-.filter-option span {
+.selected-price span {
   opacity: 0.2;
   font-family: "Gilroy-Light";
   font-size: 14px;
   line-height: 22.27px;
-}
-
-.filter-option input,
-.filter-option label {
-  cursor: pointer;
 }
 
 .filter-option input:hover {

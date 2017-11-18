@@ -56,10 +56,17 @@
         <form class="filter-form" name="filters-form" action="#" method="get">
           <fieldset>
             <legend>Стоимость</legend>
-            <div class="filter-option">
-              <label for="price"></label><span>от 0</span>
-              <input class="filter-input filter" id="price" type="range" name="radio" step="1"><span>до 5000</span>
-            </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="selected-price">
+                <span>от 0</span>
+                <span>до 5000</span>
+              </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
