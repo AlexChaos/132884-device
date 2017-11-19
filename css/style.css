@@ -74,6 +74,13 @@ img {
   cursor: pointer;
 }
 
+.button:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
 /*======block header======*/
 .header-main {
   background-color: #f7e296;
@@ -91,6 +98,13 @@ img {
 
 .header-main-logo:active {
   opacity: 0.3;
+}
+
+.header-main-logo:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 
 .header-service-list {
@@ -123,6 +137,13 @@ img {
   border-bottom: #000000 solid 2px;
 }
 
+.header-service-list input:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
 .header-service-list button {
   border: none;
   background-color: #ffffff;
@@ -146,6 +167,14 @@ img {
 
 .header-service-list a:active {
   opacity: 0.3;
+}
+
+.header-service-list button:focus,
+.header-service-list a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 
 .header-service-list a {
@@ -177,6 +206,14 @@ img {
   opacity: 0.3;
 }
 
+.site-navigation a:focus,
+.site-navigation-hidden a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
 .site-navigation button {
   background-color: #ffffff;
   width: 16px;
@@ -185,6 +222,13 @@ img {
   border: none;
   cursor: pointer;
   background-color: #f7e296;
+}
+
+.site-navigation button:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 
 .site-navigation a,
@@ -256,6 +300,21 @@ img {
   line-height: 20px;
   letter-spacing: 0.13px;
 }
+
+.slide-btn:hover {
+  opacity: 0.3;
+}
+
+.slide-btn:active {
+  opacity: 1;
+}
+
+.slide-btn:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
 /*======block slider======*/
 
 /*======block popular-products======*/
@@ -263,9 +322,22 @@ img {
   list-style: none;
 }
 
-.items-products img {
+.products-link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 160px;
   height: 160px;
+  background-color: #f7e296;
+}
+
+.products-link-wrapper:hover {
+  background-color: #f0c52e;
+}
+
+.products-link-wrapper:active img {
+  background-color: #f0c52e;
+  filter: opacity(25%);
 }
 
 .items-products a {
@@ -274,17 +346,6 @@ img {
   letter-spacing: 0.18px;
 }
 
-.products-link img {
-  background-color: #f7e296;
-}
-
-.products-link img:hover {
-  background-color: #f0c52e;
-}
-
-.products-link img:active {
-  opacity: 0.3;
-}
 /*======block popular-products======*/
 
 /*======block services======*/
@@ -320,6 +381,17 @@ img {
 /*======block brands======*/
 .brands-list {
   list-style: none;
+}
+
+.brands-link {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.brands-link:hover,
+.brands-link:focus {
+  filter: none;
+  opacity: 1;
 }
 /*======block brands======*/
 
@@ -402,6 +474,13 @@ img {
   opacity: 0.3;
 }
 
+.footer-user-menu a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
 .footer-conditions p {
   color: #ffffff;
   font-family: "Open Sans-Light";
@@ -428,6 +507,13 @@ img {
   opacity: 0.3;
 }
 
+.footer-conditions-menu a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
 .social-buttons {
   list-style: none;
 }
@@ -452,6 +538,14 @@ img {
   color: #ffffff;
 }
 
+.social-buttons a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+  opacity: 1;
+}
+
 .copyright:hover {
   opacity: 0.6;
 }
@@ -460,6 +554,12 @@ img {
   opacity: 0.3;
 }
 
+.copyright:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
 /*======block footer======*/
 
 
@@ -496,6 +596,29 @@ img {
   background-color: #ffffff;
   opacity: 0.5;
 }
+
+.communication-item input:focus,
+.communication-item textarea:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.modal-close:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
 /*======block modal-contact======*/
 
 /*style-catalog*/
@@ -512,6 +635,21 @@ img {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.14px;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.breadcrumbs a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 /*======breadcrumbs======*/
 
@@ -536,11 +674,34 @@ img {
   letter-spacing: 0.18px;
 }
 
+.range-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  padding-left: 40px;
+}
+
+.toggle-min::before {
+  content: url("../img/filter-button.svg");
+  cursor: pointer;
+}
+
+.toggle-max::before {
+  content: url("../img/filter-button.svg");
+  cursor: pointer;
+}
+
+.filter-option {
+  list-style: none;
+}
+
 .filter-option label {
   font-family: "Open Sans-Light";
   font-size: 14px;
   ine-height: 40px;
   letter-spacing: 0.14px;
+  cursor: pointer;
 }
 
 .selected-price span {
@@ -550,18 +711,24 @@ img {
   line-height: 22.27px;
 }
 
-.filter-option input:hover {
-  opacity: 0.6;
+.price-position-zero {
+  padding-left: 40px;
 }
 
-.filter-button {
-  border: none;
-  font-family: "Gilroy-Extra-bold";
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2.15px;
-  background-color: #eeeeee;
+.price-position {
+  padding-left: 40px;
+}
+
+.filter-option input:hover {
+  opacity: 0.6;
   cursor: pointer;
+}
+
+.filter-option input:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 /*======filter======*/
 
@@ -595,6 +762,13 @@ img {
 .sorting-items a:active {
   opacity: 1;
 }
+
+.sorting-items a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
 /*======catalog======*/
 
 /*======catalog-item======*/
@@ -609,6 +783,13 @@ img {
   font-family: "Gilroy-Light";
   font-size: 16px;
   letter-spacing: 0.16px;
+}
+
+.catalog-description:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 /*======catalog-item======*/
 
@@ -641,6 +822,13 @@ img {
   opacity: 1;
 }
 
+.pagination-list a:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
+}
+
 .prev,
 .next {
   background-color: #ebebeb;
@@ -655,6 +843,14 @@ img {
 .prev:active,
 .next:active {
   background-color: #d9d9d9;
+}
+
+.prev:focus,
+.next:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 
 .pages button:active {

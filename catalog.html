@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header-main">
-      <a class="header-main-logo" href="#">device</a>
+      <a class="header-main-logo" href="index.html">device</a>
       <ul class="header-service-list">
         <li>
           <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
@@ -57,15 +57,13 @@
           <fieldset>
             <legend>Стоимость</legend>
               <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" tabindex="0" laria-label="меньше"></div>
+                <div class="scale"></div>
+                <div class="toggle toggle-max" tabindex="0" aria-label="больше"></div>
               </div>
               <div class="selected-price">
-                <span>от 0</span>
-                <span>до 5000</span>
+                <span class="price-position-zero">от 0</span>
+                <span class="price-position">до 5000</span>
               </div>
           </fieldset>
           <fieldset>
@@ -106,7 +104,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filter-button" type="submit">Показать</button>
+          <button class="button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -222,7 +220,7 @@
     <div class="item-overlay">
       <section class="item-hover">
         <h2 class="visually-hidden">Корзина</h2>
-        <button class="Basket">В корзину</button>
+        <button class="button">В корзину</button>
         <p class="add-to">Добавить к сравнению</p>
       </section>
     </div>
