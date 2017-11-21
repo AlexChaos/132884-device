@@ -187,12 +187,20 @@ img {
 .header-service-list a {
   color: #000000;
 }
+
+.search {
+  display: none;
+}
 /*======block header======*/
 
 /*======block navigation======*/
 .site-navigation,
 .site-navigation-hidden {
   list-style: none;
+}
+
+.site-navigation-hidden {
+  display: none;
 }
 
 .site-navigation-hidden {
@@ -266,6 +274,11 @@ img {
 /*======block navigation======*/
 
 /*======block slider======*/
+.slider-content-two,
+.slider-content-three {
+  display: none;
+}
+
 .slider-title {
   font-size: 47px;
   letter-spacing: 0.17px;
@@ -363,6 +376,11 @@ img {
 /*======block popular-products======*/
 
 /*======block services======*/
+.guarantee,
+.credit {
+  display: none;
+}
+
 .services-description {
   background-color: #e5e5e5;
 }
