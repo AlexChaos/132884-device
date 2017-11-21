@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-weight: 300;
   font-style: normal;
   src: url("../fonts/opensanslight.woff2") format("woff2"),
@@ -33,12 +33,10 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Gilroy-Extra-bold", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -70,8 +68,8 @@ img {
   text-transform: uppercase;
   letter-spacing: 2.15px;
   border: none;
-  background-color: #f0c52e;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .button:focus {
@@ -109,7 +107,7 @@ img {
 
 .header-service-list {
   list-style: none;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -118,7 +116,7 @@ img {
 
 .header-service-list input {
   opacity: 0.3;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   font-weight: 300;
   line-height: 36px;
@@ -274,7 +272,7 @@ img {
 .slider-text {
   width: 479px;
   color: #464646;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -294,7 +292,7 @@ img {
 
 .feature-item th {
   color: #464646;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 13px;
   font-weight: 300;
   line-height: 20px;
@@ -331,6 +329,12 @@ img {
   background-color: #f7e296;
 }
 
+.items-products a {
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+}
+
 .products-link-wrapper:hover {
   background-color: #f0c52e;
 }
@@ -340,10 +344,11 @@ img {
   filter: opacity(25%);
 }
 
-.items-products a {
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 0.18px;
+.products-link-active:focus {
+  outline: none;
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 3px #000000;
 }
 
 /*======block popular-products======*/
@@ -371,7 +376,7 @@ img {
 
 .services-text {
   color: #464646;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   line-height: 30px;
   letter-spacing: 0.15px;
@@ -403,7 +408,7 @@ img {
 
 .info-text {
   color: #464646;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -423,7 +428,7 @@ img {
 
 .contact-text {
   color: #464646;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   font-weight: 300;
   line-height: 30px;
@@ -459,7 +464,7 @@ img {
 
 .footer-user-menu a {
   color: #ffffff;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   line-height: 36px;
   letter-spacing: 0.15px;
@@ -483,7 +488,7 @@ img {
 
 .footer-conditions p {
   color: #ffffff;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 15px;
   line-height: 30px;
 }
@@ -518,19 +523,36 @@ img {
   list-style: none;
 }
 
-.social-buttons a {
-  color: #ffffff;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
+.social-button {
+  display: inline-flex;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
-.social-buttons a:hover {
-  opacity: 1;
+.social-facebook {
+  width: 32px;
+  height: 32px;
+  background-position: -62px -10px;
 }
 
-.social-buttons a:active {
+.social-instagram {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -10px;
+}
+
+.social-twitter {
+  width: 32px;
+  height: 32px;
+  background-position: -10px -62px;
+}
+
+.social-button:hover {
+  opacity: 0.6;
+}
+
+.social-button:active {
   opacity: 0.1;
 }
 
@@ -538,12 +560,25 @@ img {
   color: #ffffff;
 }
 
-.social-buttons a:focus {
+.social-buttons:focus {
   outline: none;
   box-shadow:
   0 0 0 2px #ffffff,
   0 0 0 3px #000000;
   opacity: 1;
+}
+
+.copyright {
+  display: inline-flex;
+  font-size: 0;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.copyright-logo {
+  width: 27px;
+  height: 34px;
+  background-position: -114px -10px;
 }
 
 .copyright:hover {
@@ -697,7 +732,7 @@ img {
 }
 
 .filter-option label {
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 14px;
   ine-height: 40px;
   letter-spacing: 0.14px;
@@ -864,21 +899,10 @@ img {
   background-color: #eeeeee;
 }
 
-.Basket {
-  color: #000000;
-  font-family: "Gilroy-Extra-bold";
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2.15px;
-  border: none;
-  cursor: pointer;
-  background-color: #eeeeee;
-}
-
 .add-to {
   opacity: 0.5;
   color: #000000;
-  font-family: "Open Sans-Light";
+  font-family: "Open-Sans-Light";
   font-size: 13px;
   line-height: 36px;
   letter-spacing: 0.13px;
