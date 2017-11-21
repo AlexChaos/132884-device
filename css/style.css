@@ -72,6 +72,15 @@ img {
   background-color: transparent;
 }
 
+.button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 160px;
+  height: 8px;
+  background-color: #f0c52e;
+}
+
 .button:focus {
   outline: none;
   box-shadow:
@@ -603,6 +612,11 @@ img {
   background-color: #ffffff;
 }
 
+.communication-item {
+  position: relative;
+  z-index: 1;
+}
+
 .communication-item label {
   color: #000000;
   font-size: 18px;
@@ -754,6 +768,11 @@ img {
   padding-left: 40px;
 }
 
+.filter-send {
+  position: relative;
+  z-index: 1;
+}
+
 .filter-option input:hover {
   opacity: 0.6;
   cursor: pointer;
@@ -765,6 +784,7 @@ img {
   0 0 0 2px #ffffff,
   0 0 0 3px #000000;
 }
+
 /*======filter======*/
 
 /*======catalog======*/
@@ -866,6 +886,9 @@ img {
 
 .prev,
 .next {
+  font-family: "Gilroy-Extra-bold";
+  font-size: 16px;
+  text-transform: uppercase;
   background-color: #ebebeb;
   border: none;
 }
@@ -897,6 +920,11 @@ img {
 /*======item-overlay======*/
 .item-overlay {
   background-color: #eeeeee;
+}
+
+.item-hover {
+  position: relative;
+  z-index: 1;
 }
 
 .add-to {
