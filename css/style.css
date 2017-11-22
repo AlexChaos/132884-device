@@ -62,6 +62,9 @@ img {
 }
 
 .button {
+  position: relative;
+  text-align: center;
+  display: inline-flex;
   color: #000000;
   font-family: "Gilroy-Extra-bold";
   font-size: 18px;
@@ -69,16 +72,27 @@ img {
   letter-spacing: 2.15px;
   border: none;
   cursor: pointer;
+  padding: 9px;
   background-color: transparent;
 }
 
 .button::before {
   content: "";
+  top: 15px;
   position: absolute;
   z-index: -1;
   width: 160px;
   height: 8px;
   background-color: #f0c52e;
+}
+
+.button:hover::before {
+  top: 0;
+  height: 40px;
+}
+
+.button:active {
+  color: rgba(0,0,0,.3);
 }
 
 .button:focus {
@@ -954,3 +968,8 @@ img {
   letter-spacing: 0.13px;
 }
 /*======item-overlay======*/
+
+
+/*======grid layout======*/
+
+/*======grid layout======*/
