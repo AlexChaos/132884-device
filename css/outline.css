@@ -253,3 +253,161 @@ main.container::before {
 .product-info::before {
   content: ".product-info";
 }
+
+/*device*/
+.header-wrapper::before {
+  content: ".header-wrapper";
+}
+
+.header-main-logo::before {
+  content: ".header-main-logo";
+}
+
+.header-service-list::before {
+  content: ".header-service-list";
+}
+
+.search::before {
+  content: ".search";
+}
+
+.login::before {
+  content: ".login";
+}
+
+.main-navigation::before {
+  content: ".main-navigation";
+}
+
+.site-navigation::before {
+  content: ".site-navigation";
+}
+
+.site-navigation-hidden::before {
+  content: ".site-navigation-hidden";
+}
+
+.main-container::before {
+  content: ".main-container";
+}
+
+.slider-content::before {
+  content: ".slider-content";
+}
+
+.image-block::before {
+  content: ".slider-content";
+}
+
+.slider-content-block::before {
+  content: ".slider-content";
+}
+
+.popular-products::before {
+  content: ".popular-products";
+}
+
+.items-products::before {
+  content: ".items-products";
+}
+
+.services::before {
+  content: ".services";
+}
+
+.services-list::before {
+  content: ".services-list";
+}
+
+.services-description::before {
+  content: ".services-description";
+}
+
+.brands::before {
+  content: ".brands";
+}
+
+.brands-list li::before {
+  content: ".brands-list";
+}
+
+.info-wrapper::before {
+  content: ".info-wrapper";
+}
+
+.info::before {
+  content: ".info";
+}
+
+.info::before {
+  content: ".contact";
+}
+
+.main-footer::before {
+  content: ".main-footer";
+}
+
+.footer-user::before {
+  content: ".footer-user";
+}
+
+.footer-conditions::before {
+  content: ".footer-conditions";
+}
+
+.footer-social::before {
+  content: ".footer-social";
+}
+
+.breadcrumbs-wrapper::before {
+  content: ".breadcrumbs-wrapper";
+}
+
+.catalog::before {
+  content: ".catalog";
+}
+
+.filter::before {
+  content: ".filter";
+}
+
+.catalog-item-wrapper::before {
+  content: ".catalog-item-wrapper";
+}
+
+.filter-wrapper::before {
+  content: ".filter-wrapper";
+}
+
+.sorting-title::before {
+  content: ".sorting-title";
+}
+
+.sorting-items::before {
+  content: ".sorting-items";
+}
+
+.catalog-item-wrapper::before {
+  content: ".catalog-item-wrapper";
+}
+
+.catalog-item-catalog-item::before {
+  content: ".catalog-item-wrapper";
+}
+
+.pages::before {
+  content: ".pages";
+}
+
+.prev::before {
+  content: ".prev";
+}
+
+.pagination-list::before {
+  content: ".pagination-list";
+}
+
+.next::before {
+  content: ".next";
+}
+/*device*/
