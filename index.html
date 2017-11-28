@@ -10,33 +10,32 @@
     <header class="header-main">
       <a class="header-main-logo">device</a>
       <ul class="header-service-list">
-        <li>
+        <li class="header-service-search">
           <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
           <a class="search" href="#">Найти</a>
         </li>
-        <li>
+        <li class="header-service-input">
           <button class="login" type="submit">Войти</button>
         </li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li class="header-service-compare"><a class="compare" href="#">Сравнить</a></li>
+        <li class="header-service-basket"><a class="basket" href="#">Корзина</a></li>
       </ul>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li>
-            <a href="catalog.html">Каталог товаров</a>
-            <button name="button">+</button>
+            <a class="site-navigation-catalog" href="catalog.html">Каталог товаров</a>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
+          <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
+          <li class="site-navigation-guarantee"><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="site-navigation-hidden">
           <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
           <li><a href="#">Фитнес-браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
           <li><a href="#">Квадрокоптеры</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Умные часы</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
         </ul>
       </nav>
     </header>
@@ -49,13 +48,13 @@
         </div>
         <div class="slider-content-block">
           <div class="slider-device">
-            <h2 class="slider-title">Делай селфи,  как Бен Стиллер! </h2>
+            <h2 class="slider-title">Делай селфи,<br> как Бен Стиллер! </h2>
             <span class="slide-number">01</span>
             <p class="slider-text">
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a class="button" href="#">Подробнее</a>
+            <a class="button slider-button" href="#">Подробнее</a>
         <!--здесь кнопки переключатели-->
             <div class="slider-control">
               <ul class="slider-switches">
@@ -191,11 +190,11 @@
           </li>
           <li>
             <a class="products-link" href="#">
-              <div class="products-link-wrapper">
+              <div class="products-link-wrapper products-link-self">
                 <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
               </div>
             </a>
-            <a class="products-link-active" href="#">Моноподы для селфи</a>
+            <a class="products-link-active" href="#">Моноподы<br>для селфи</a>
           </li>
           <li>
             <a class="products-link" href="#">
@@ -231,10 +230,9 @@
           </li>
         </ul>
       </section>
-
       <section class="services">
         <ul class="services-list">
-          <li><a class="button" href="#">Доставка</a></li>
+          <li><a class="button active" href="#">Доставка</a></li>
           <li><a class="button" href="#">Гарантия</a></li>
           <li><a class="button" href="#">Кредит</a></li>
         </ul>
@@ -243,7 +241,7 @@
           <p class="services-text">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
-          <img src="img/delivery.svg" width="136" height="164" alt="Доставка товара">
+          <!--<img src="img/delivery.svg" width="136" height="164" alt="Доставка товара">-->
         </div>
         <div class="services-description guarantee visually-hidden">
           <h2 class="services-title">Гарантия</h2>
@@ -299,7 +297,7 @@
             <li><a>Автотрейдинг</a></li>
             <li><a>ЖелДорЭкспедиция</a></li>
           </ul>
-          <button class="button" type="button">Подробнее о нас</button>
+          <button class="button about-us" type="button">Подробнее о нас</button>
         </section>
         <section class="contact">
           <h2 class="contact-header">Контакты</h2>
@@ -307,37 +305,39 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <img src="img/map.jpg" width="560" height="222" alt="Карта">
-          <button class="button" type="button">Напишите нам</button>
+          <button class="button write-us" type="button">Напишите нам</button>
         </section>
       </div>
       <footer class="main-footer">
-        <section class="footer-user">
+        <section class="footer-conditions">
           <h2 class="visually-hidden">Для пользователя</h2>
           <span class="logo-footer">DEVICE</span>
-          <ul class="footer-user-menu">
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
-          </ul>
-        </section>
-        <section class="footer-conditions">
-          <h2 class="visually-hidden">Условия покупки</h2>
           <p>г. Москва, ул. Строителей, 15</p>
-          <ul class="footer-conditions-menu">
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="footer-social-menu">
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <p>Тел.: +7 (495) 495-95-95</p>
-        </section>
-        <section class="footer-social">
-          <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social-buttons">
             <li><a class="social-button social-facebook" href="#" aria-label="Фейсбук"></a></li>
             <li><a class="social-button social-instagram" href="#" aria-label="Инстаграм"></a></li>
             <li><a class="social-button social-twitter" href="#" aria-label="Твиттер"></a></li>
           </ul>
-          <a class="copyright copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </section>
+        <section class="footer-user">
+          <h2 class="visually-hidden">Условия покупки</h2>
+          <ul class="footer-user-menu">
+            <li><a class="footer-user-enter" href="#">Войти</a></li>
+            <li><a class="footer-user-compare" href="#">Сравнить</a></li>
+            <li><a class="footer-user-basket" href="#">Корзина</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+          <div class="copyright-logo">
+            <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          </div>
         </section>
       </footer>
     </main>
