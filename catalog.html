@@ -9,14 +9,14 @@
   <body>
     <div class="container">
       <header class="header-main">
-        <a class="header-main-logo">device</a>
+        <a class="header-main-logo" href="index.html">device</a>
         <ul class="header-service-list">
           <li class="header-service-search user-search">
             <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
             <a class="search" href="#">Найти</a>
           </li>
           <li class="header-service-authorize">
-            <a class="header-service-user" for="authorization">Валерий Петухов</a>
+            <a class="header-service-user" href="#">Валерий Петухов</a>
           </li>
           <li class="header-service-input user-exit">
             <button class="login login-exit" type="submit">Выйти</button>
@@ -26,8 +26,8 @@
         </ul>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li>
-              <a class="site-navigation-catalog" href="catalog.html">Каталог товаров</a>
+            <li class="site-navigation-catalog">
+              <a href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
             <li class="site-navigation-guarantee"><a href="#">Гарантия</a></li>
@@ -77,18 +77,18 @@
         </div>
       </section>
 
-      <div class="container">
-        <div class="filter-wrapper">
+      <section class="filter-content">
+        <div class="filter-wrapper container">
           <section class="filter">
             <h2 class="visually-hidden">Форма</h2>
             <form class="filter-form" name="filters-form" action="#" method="get">
               <fieldset>
                 <legend>Стоимость</legend>
                   <div class="range-controls">
-                    <div class="toggle toggle-min" tabindex="0" laria-label="меньше"></div>
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="меньше"></div>
                     <div class="toggle toggle-max" tabindex="0" aria-label="больше"></div>
                   </div>
                   <div class="selected-price">
@@ -98,7 +98,7 @@
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
-                <ul>
+                <ul class="filter-color">
                   <li class="filter-option">
                     <input class="filter-input filter" id="black" type="checkbox" name="black" checked>
                     <label for="black">Черный</label>
@@ -123,19 +123,19 @@
               </fieldset>
               <fieldset>
                 <legend>Bluetooth</legend>
-                <ul>
+                <ul class="filter-variant">
                   <li class="filter-option">
-                    <input class="filter-input filter" id="one" type="radio" name="variant" value="yes" checked>
+                    <input class="filter-radio" id="one" type="radio" name="variant" value="yes" checked>
                     <label for="one">Есть</label>
                   </li>
                   <li class="filter-option">
-                    <input class="filter-input filter" id="two" type="radio" name="variant" value="no">
+                    <input class="filter-radio" id="two" type="radio" name="variant" value="no">
                     <label for="two">Нет</label>
                   </li>
                 </ul>
               </fieldset>
               <p class="filter-send">
-                <button class="button" type="submit">Показать</button>
+                <button class="button show" type="submit">Показать</button>
               </p>
             </form>
           </section>
@@ -204,7 +204,8 @@
             </div>
           </section>
       </div>
-    </div>
+      </section>
+
     </main>
 
     <div class="main-footer-wrapper">
