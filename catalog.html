@@ -11,9 +11,9 @@
       <header class="header-main">
         <a class="header-main-logo" href="index.html">device</a>
         <ul class="header-service-list">
-          <li class="header-service-search user-search">
-            <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
-            <a class="search" href="#">Найти</a>
+          <li class="header-service-search">
+            <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
+            <input type="submit" name="submit" value="Найти">
           </li>
           <li class="header-service-authorize">
             <a class="header-service-user" href="#">Валерий Петухов</a>
@@ -77,7 +77,7 @@
         </div>
       </section>
 
-      <section class="filter-content">
+      <div class="filter-content">
         <div class="filter-wrapper container">
           <section class="filter">
             <h2 class="visually-hidden">Форма</h2>
@@ -145,11 +145,14 @@
             <div class="catalog-item-wrapper">
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                    </a>
-                  </p>
+                  <div class="catalog-item-image">
+                    <img class="image-object" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                    <div class="catalog-overlay">
+                      <h2 class="visually-hidden">Корзина</h2>
+                      <button class="button">В корзину</button>
+                      <p class="add-to">Добавить к сравнению</p>
+                    </div>
+                  </div>
                   <p class="catalog-item-price">
                     <a class="catalog-description" href="#">Любительская селфи-палка</a>
                     <span class="price">500 руб.</span>
@@ -157,11 +160,14 @@
               </article>
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                    </a>
-                  </p>
+                  <div class="catalog-item-image">
+                    <img class="image-object" src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                    <div class="catalog-overlay">
+                      <h2 class="visually-hidden">Корзина</h2>
+                      <button class="button">В корзину</button>
+                      <p class="add-to">Добавить к сравнению</p>
+                    </div>
+                  </div>
                   <p class="catalog-item-price">
                     <a class="catalog-description" href="#">Профессиональная<br> селфи-палка</a>
                     <span class="price">1500 руб.</span>
@@ -169,11 +175,14 @@
               </article>
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                    </a>
-                  </p>
+                  <div class="catalog-item-image">
+                    <img class="image-object" src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                    <div class="catalog-overlay">
+                      <h2 class="visually-hidden">Корзина</h2>
+                      <button class="button">В корзину</button>
+                      <p class="add-to">Добавить к сравнению</p>
+                    </div>
+                  </div>
                   <p class="catalog-item-price">
                     <a class="catalog-description" href="#">Непотопляемая селфи-палка</a>
                     <span class="price">2500 руб.</span>
@@ -181,17 +190,21 @@
               </article>
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
-                  <p class="catalog-item-image">
-                    <a href="#">
-                      <img src="img/item-4.jpg" width="360" height="380" alt="Следуй за мной селфи-палка">
-                    </a>
-                  </p>
+                  <div class="catalog-item-image">
+                    <img class="image-object" src="img/item-4.jpg" width="360" height="380" alt="Следуй за мной селфи-палка">
+                    <div class="catalog-overlay">
+                      <h2 class="visually-hidden">Корзина</h2>
+                      <button class="button">В корзину</button>
+                      <p class="add-to">Добавить к сравнению</p>
+                    </div>
+                  </div>
                   <p class="catalog-item-price">
                     <a class="catalog-description" href="#">Селфи-палка "Следуй за<br> мной"</a>
                     <span class="price">4900 руб.</span>
                   </p>
               </article>
             </div>
+
             <div class="pages">
               <h2 class="visually-hidden">Навигация по страницам каталога</h2>
               <button class="prev" type="button">Назад</button>
@@ -203,9 +216,8 @@
               <button class="next" type="button">Вперед</button>
             </div>
           </section>
+        </div>
       </div>
-      </section>
-
     </main>
 
     <div class="main-footer-wrapper">
@@ -244,13 +256,5 @@
           </footer>
         </div>
       </div>
-
-      <div class="item-overlay">
-        <section class="item-hover">
-          <h2 class="visually-hidden">Корзина</h2>
-          <button class="button">В корзину</button>
-          <p class="add-to">Добавить к сравнению</p>
-        </section>
-    </div>
   </body>
 </html>

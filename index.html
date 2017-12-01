@@ -12,8 +12,8 @@
         <a class="header-main-logo">device</a>
         <ul class="header-service-list">
           <li class="header-service-search">
-            <input type="search" name="search" id="my-search" placeholder="Поиск по сайту">
-            <a class="search" href="#">Найти</a>
+            <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
+            <input type="submit" name="submit" value="Найти">
           </li>
           <li class="header-service-input">
             <button class="login" type="submit">Войти</button>
@@ -30,14 +30,16 @@
             <li class="site-navigation-guarantee"><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="site-navigation-hidden">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Квадрокоптеры</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-          </ul>
+          <div class="site-navigation-block">
+            <ul class="site-navigation-hidden">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
     </div>
@@ -94,7 +96,7 @@
       </div>
 
       <div class="container">
-        <section class="slider-content slider-content-two visually-hidden">
+        <section class="slider-content slider-content-two">
           <div class="image-block">
             <img src="img/slider-2.png" width="345" height="485" alt="Картинка фитнес браслет">
           </div>
@@ -139,7 +141,7 @@
       </div>
 
       <div class="container">
-        <section class="slider-content slider-content-three visually-hidden">
+        <section class="slider-content slider-content-three">
           <div class="image-block">
             <img src="img/slider-3.png" width="526" height="334" alt="Картинка квадрокоптер">
           </div>
@@ -156,7 +158,7 @@
               <div class="slider-control">
                 <ul class="slider-switches">
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Первый слайд">*</button>
+                    <button class="slide-btn active" type="button" aria-label="Первый слайд">*</button>
                   </li>
                   <li class="slide-item">
                     <button class="slide-btn" type="button" aria-label="Второй слайд">*</button>
@@ -329,8 +331,9 @@
           </section>
         </div>
       </div>
+    </main>
 
-      <div class="main-footer-wrapper">
+    <div class="main-footer-wrapper">
         <div class="container">
           <footer class="main-footer">
             <section class="footer-conditions">
@@ -366,14 +369,12 @@
           </footer>
         </div>
       </div>
-    </main>
 
-    <div class="modal-wrapper">
-      <section class="modal-contact">
+      <section class="modal modal-contact">
         <h2 class="visually-hidden">Форма связи</h2>
         <button class="modal-close" type="button">Закрыть</button>
         <!--Форма-->
-        <form class="communication-form" name="modal-form" action="#" method="post">
+        <form class="communication-form container-form" name="modal-form" action="#" method="post">
           <p class="communication-item">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Представьтесь, пожалуйста" required>
@@ -386,14 +387,13 @@
             <label for="textarea">Текст письма:</label>
             <textarea id="textarea" name="textarea" rows="10" cols="50" placeholder="В свободной форме" required></textarea>
           </p>
-          <p class="communication-item">
+          <p class="communication-item send-form">
             <button class="button" type="submit">Отправить</button>
           </p>
         </form>
       </section>
-    </div>
 
-    <section class="modal-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
       <img src="img/map-popup.jpg" width="960" height="559" alt="улица Строителей, 15">
       <!--Интерактивная карта-->
