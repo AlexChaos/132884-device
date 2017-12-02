@@ -1967,6 +1967,12 @@ img {
   background-color: #ffffff;
 }
 
+.modal-img {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
 .modal-contact {
   display: none;
   top: 180px;
@@ -1975,6 +1981,33 @@ img {
   margin-left: -480px;
   box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
   z-index: 10;
+}
+
+.modal-map {
+  display: none;
+  top: 50%;
+  left: 50%;
+
+  width: 960px;
+  height: 559px;
+  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+
+  margin-top: -280px;
+  margin-left: -480px;
+  z-index: 10;
+}
+
+.modal-map iframe {
+  position: absolute;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .communication-item input {
@@ -2143,21 +2176,6 @@ img {
   background-color: rgba(238,238,238,.7);
 }
 
-/*.catalog-overlay:hover::before, .catalog-item-image a:hover+..catalog-overlay::before{
-  content: "";
-  position: absolute;
-  top: -170px;
-  left: -80px;
-  z-index: -1;
-  width: 360px;
-  height: 380px;
-  background-color: rgba(238, 238, 238, 0.7);
-}
-
-.catalog-overlay:hover, ..catalog-item-image a:hover+.catalog-overlay {
-    display: block;
-}*/
-
 .catalog-overlay button {
   text-align: center;
   width: 200px;
@@ -2178,18 +2196,46 @@ img {
 }
 /*======catalog-overlay======*/
 
-/*======modal-map======*/
-.modal-map {
-  display: none;
-  top: 50%;
-  left: 50%;
+/*======modal-js======*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
 
-  width: 960px;
-  height: 559px;
-  box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+  70% {
+    transform: translateY(30px);
+  }
 
-  margin-top: -280px;
-  margin-left: -480px;
-  z-index: 10;
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
-/*======modal-map======*/
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+
+/*======modal-js======*/
