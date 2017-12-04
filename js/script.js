@@ -30,7 +30,6 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
   if ( !yourName.value || !yourAdress.value) {
     evt.preventDefault();
-    /*console.log("Введите пожалуйста Ваше имя, Ваш адрес и текст письма.");*/
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
@@ -38,15 +37,6 @@ form.addEventListener("submit", function(evt) {
     localStorage.setItem("your-name", yourName.value);
   }
 });
-
-window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
 
 mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -60,6 +50,10 @@ mapLink.addEventListener("click", function (evt) {
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
       if (mapPopup.classList.contains("modal-show")) {
         mapPopup.classList.remove("modal-show");
       }

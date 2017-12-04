@@ -24,22 +24,20 @@
         <nav class="main-navigation">
           <ul class="site-navigation">
             <li class="site-navigation-catalog">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="index-catalog" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-navigation-delivery"><a href="#">Доставка</a></li>
             <li class="site-navigation-guarantee"><a href="#">Гарантия</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <div class="site-navigation-block">
-            <ul class="site-navigation-hidden">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-            </ul>
-          </div>
+          <ul class="site-navigation-hidden">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
         </nav>
       </header>
     </div>
@@ -47,7 +45,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Магазин гаджетов "Девайс"</h1>
       <div class="container">
-        <section class="slider-content slider-content-one">
+        <section class="slider-content slider-content-one" id="slide-1">
           <div class="image-block">
             <img src="img/slider-1.png" width="384" height="486" alt="Картинка инструмента для селфи">
           </div>
@@ -64,13 +62,13 @@
               <div class="slider-control">
                 <ul class="slider-switches">
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Первый слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Первый слайд" id="slide-btn-1">*</button>
                   </li>
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Второй слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Второй слайд" id="slide-btn-2">*</button>
                   </li>
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Третий слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Третий слайд" id="slide-btn-3">*</button>
                   </li>
                 </ul>
               </div>
@@ -96,7 +94,7 @@
       </div>
 
       <div class="container">
-        <section class="slider-content slider-content-two">
+        <section class="slider-content slider-content-two" id="slide-2">
           <div class="image-block">
             <img src="img/slider-2.png" width="345" height="485" alt="Картинка фитнес браслет">
           </div>
@@ -113,13 +111,13 @@
               <div class="slider-control">
                 <ul class="slider-switches">
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Первый слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Первый слайд" id="slide-btn-1">*</button>
                   </li>
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Второй слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Второй слайд" id="slide-btn-2">*</button>
                   </li>
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Третий слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Третий слайд" id="slide-btn-3">*</button>
                   </li>
                 </ul>
               </div>
@@ -141,7 +139,7 @@
       </div>
 
       <div class="container">
-        <section class="slider-content slider-content-three">
+        <section class="slider-content slider-content-three" id="slide-3">
           <div class="image-block">
             <img src="img/slider-3.png" width="526" height="334" alt="Картинка квадрокоптер">
           </div>
@@ -158,13 +156,13 @@
               <div class="slider-control">
                 <ul class="slider-switches">
                   <li class="slide-item">
-                    <button class="slide-btn active" type="button" aria-label="Первый слайд">*</button>
+                    <button class="slide-btn active" type="button" aria-label="Первый слайд" id="slide-btn-1">*</button>
                   </li>
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Второй слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Второй слайд" id="slide-btn-2">*</button>
                   </li>
                   <li class="slide-item">
-                    <button class="slide-btn" type="button" aria-label="Третий слайд">*</button>
+                    <button class="slide-btn" type="button" aria-label="Третий слайд" id="slide-btn-3">*</button>
                   </li>
                 </ul>
               </div>
@@ -256,7 +254,6 @@
               <p class="services-text">
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
               </p>
-              <!--<img src="img/delivery.svg" width="136" height="164" alt="Доставка товара">-->
             </div>
             <div class="services-description guarantee visually-hidden">
               <h2 class="services-title">Гарантия</h2>
