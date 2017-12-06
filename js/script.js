@@ -3,6 +3,7 @@ var popup = document.querySelector(".modal-contact");
 var close = document.querySelector(".modal-close");
 var mapLink = document.querySelector(".modal-img");
 var mapPopup = document.querySelector(".modal-map");
+
 var mapClose = mapPopup.querySelector(".modal-close");
 var form = popup.querySelector("form");
 var yourName = popup.querySelector(".your-name");
@@ -38,7 +39,7 @@ form.addEventListener("submit", function(evt) {
   }
 });
 
-mapLink.addEventListener("click", function (evt) {
+  mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapPopup.classList.add("modal-show");
   });
@@ -61,3 +62,23 @@ mapLink.addEventListener("click", function (evt) {
   });
 
 
+var slideOne = document.querySelector(".slide-btn-one");
+var slideTwo = document.querySelector(".slide-btn-two");
+var slideThree = document.querySelector(".slide-btn-three");
+var slideRemove = document.querySelector(".slider-content-one");
+var contentTwo = document.querySelector(".slider-content-two");
+var contentThree = document.querySelector(".slider-content-three");
+
+  /*slider*/
+  slideTwo.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    contentTwo.classList.add("slider-show");
+    slideRemove.classList.add("slider-remove");
+  });
+
+  slideThree.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    contentThree.classList.add("slider-show");
+    slideRemove.classList.add("slider-remove");
+  });
+  /*slider*/

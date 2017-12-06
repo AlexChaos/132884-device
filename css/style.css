@@ -511,8 +511,19 @@ img {
   padding-left: 90px;
 }
 
+
 .slider-content-block {
   flex-grow: 1;
+  padding-left: 50px;
+}
+
+.image-block-three {
+  padding-left: 31px;
+  padding-top: 65px;
+}
+
+.slider-content-block-three {
+  padding-top: 2px;
   padding-left: 50px;
 }
 
@@ -531,11 +542,21 @@ img {
   display: none;
 }
 
+.slider-show {
+  display: flex;
+}
+
+.slider-remove {
+  display: none;
+}
+
 .slider-title {
+  position: relative;
   margin-top: 80px;
   margin-bottom: 23px;
   font-size: 47px;
   letter-spacing: 0.17px;
+  z-index: 2;
 }
 
 .slide-number {
@@ -546,6 +567,7 @@ img {
   font-size: 179px;
   line-height: 179.2px;
   letter-spacing: 0.36px;
+  z-index: 1;
 }
 
 .slider-text {
