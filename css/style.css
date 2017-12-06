@@ -116,8 +116,8 @@ img {
 .header-main {
   min-height: 299px;
   position: relative;
-  background-color: #f7e296;
   margin-top: 40px;
+  background-color: #f7e296;
 }
 
 .header-main-logo {
@@ -246,7 +246,6 @@ img {
   border: none;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
-  opacity: 0.3;
 }
 
 .search-form-field+input[type=submit]:active,
@@ -439,24 +438,25 @@ img {
   font-weight: 300;
   line-height: 36px;
   letter-spacing: 0.15px;
+  text-transform: none;
 }
 
 .navigation-hidden-wrapper {
   position: absolute;
   left: 0;
   width: 1160px;
-  padding-top: 0;
+  padding-top: 22px;
   background-color: #f7e296;
   z-index: -1;
 }
 
 .site-navigation-hidden li {
-  width: 200px;
+  width: 250px;
 }
 
-.site-navigation-hidden li:nth-child(3n+1) {
-  margin-right: 58px;
-}
+/*.site-navigation-hidden li:nth-child(3n+1) {
+  margin-right: 48px;
+}*/
 
 .site-navigation-hidden li:last-child {
   margin-right: 100px;
@@ -494,10 +494,9 @@ img {
   color: #000000;
 }
 
-.index-catalog:hover, .navigation-hidden-wrapper {
+.navigation-hidden-wrapper:hover, .index-catalog:hover+.navigation-hidden-wrapper {
   z-index: 10;
 }
-
 /*======block navigation======*/
 
 /*======block slider======*/
@@ -1029,7 +1028,7 @@ img {
 }
 
 .footer-social {
-  width: 440px;
+  width: 450px;
   margin-right: 40px;
 
 }
@@ -1988,7 +1987,7 @@ img {
   left: 50%;
   min-width: 960px;
   margin-left: -480px;
-  box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
+ box-shadow: 0 20px 40px rgba(4, 6, 6, 0.75);
   z-index: 10;
 }
 
