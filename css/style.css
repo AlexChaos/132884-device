@@ -3,7 +3,7 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
-        url("../fonts/gilroyextrabold.woff") format("woff");
+      url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
@@ -233,7 +233,7 @@ img {
 
 .header-service-list input:focus,
 .header-service-list button:focus,
- .header-service-list a:focus {
+.header-service-list a:focus {
   outline: none;
   -webkit-box-shadow:
   0 0 0 2px #ffffff,
@@ -514,7 +514,8 @@ img {
   color: #000000;
 }
 
-.navigation-hidden-wrapper:hover, .index-catalog:hover+.navigation-hidden-wrapper {
+.navigation-hidden-wrapper:hover,
+.index-catalog:hover+.navigation-hidden-wrapper {
   z-index: 10;
 }
 /*======block navigation======*/
@@ -526,6 +527,7 @@ img {
   display: flex;
   position: relative;
   top: -130px;
+  min-height: 495px;
 }
 
 .image-block {
@@ -543,11 +545,17 @@ img {
   padding-left: 50px;
 }
 
+.slider-content-block-two {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 80px;
+}
+
 .image-block-three {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-left: 31px;
   padding-top: 65px;
 }
 
@@ -556,7 +564,6 @@ img {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding-top: 2px;
-  padding-left: 50px;
 }
 
 .slider-content-block::before {
@@ -569,18 +576,21 @@ img {
   background-color: #ffffff;
 }
 
+.slider-content-one,
 .slider-content-two,
 .slider-content-three {
   display: none;
 }
 
-.slider-show {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.slider-content-one {
   display: flex;
 }
 
-.slider-remove {
+.slide-show {
+  display: flex;
+}
+
+.slide-hidden {
   display: none;
 }
 
@@ -636,7 +646,7 @@ img {
   font-size: 0;
 }
 
-.slider-switches button::after {
+.slider-switches .active::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -662,8 +672,6 @@ img {
 .slider-switches li:nth-child(n+2) {
   padding-left: 20px;
 }
-
-
 
 .feature-item td {
   font-family: "Gilroy-Light";
@@ -1007,7 +1015,6 @@ img {
 .brands-link {
   outline: none;
 }
-
 
 /*======block brands======*/
 
@@ -1474,22 +1481,6 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*style-catalog*/
 /*======header======*/
 .user-search {
@@ -1643,17 +1634,17 @@ box-shadow:
 }
 
 .filter-sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #ebebeb;
+    width: 100%;
   margin-top: -135px;
   min-height: 70px;
+  background-color: #ebebeb;
+  background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 50%,#ebebeb 50%,#ebebeb 100%);
 }
+
 
 .filter {
   width: 268px;
-  margin-left: 60px;
+  padding-left: 58px;
   background-color: #efefef;
 }
 
@@ -1664,14 +1655,15 @@ box-shadow:
 }
 
 .filter-title {
+    width: 200px;
   padding-top: 29px;
   padding-bottom: 29px;
-  padding-right: 200px;
-  padding-left: 60px;
-  margin: 0;
+  padding-right: 66px;
+  margin: 0 0 0 60px;
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
+  background-color: #dbdbdb;
 }
 
 .filter-form fieldset {
@@ -1895,7 +1887,7 @@ box-shadow:
   flex-flow: wrap;
   width: 761px;
   margin-bottom: 22px;
-  padding-top: 50px;
+  padding-top: 65px;
 }
 
 .catalog-item {
@@ -1903,18 +1895,15 @@ box-shadow:
 }
 
 .catalog-item:nth-child(-n+2) {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 
 .sorting {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  width: 832px;
+  min-height: 19px;
+  background-color: #ebebeb;
 }
 
 .sorting-title {
@@ -1923,7 +1912,7 @@ box-shadow:
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.91px;
-  padding-left: 70px;
+  padding-left: 75px;
   padding-right: 60px;
 }
 
@@ -1980,8 +1969,8 @@ box-shadow:
 .catalog-sort .catalog-sort-down::before {
   content: "";
   position: absolute;
-  top: 34px;
-  left: 235px;
+  top: -4px;
+  left: 236px;
   width: 17px;
   height: 9px;
   background-image: url(../img/sprite.png);
@@ -2017,7 +2006,7 @@ box-shadow:
 /*======catalog-item======*/
 .catalog-item-image {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .catalog-description {
@@ -2066,7 +2055,7 @@ box-shadow:
   -ms-flex-line-pack: center;
   align-content: center;
   min-height: 70px;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
   background-color: #ebebeb;
 }
 

@@ -61,24 +61,33 @@ form.addEventListener("submit", function(evt) {
     }
   });
 
+/*slider*/
+var controls = document.querySelector(".active");
+var noActiveTwo = document.querySelector(".btn-two");
+var noActiveThree = document.querySelector(".btn-three");
+var slideOne = document.querySelector(".slider-content-one");
+var slideTwo = document.querySelector(".slider-content-two");
+var slideThree = document.querySelector(".slider-content-three");
 
-var slideOne = document.querySelector(".slide-btn-one");
-var slideTwo = document.querySelector(".slide-btn-two");
-var slideThree = document.querySelector(".slide-btn-three");
-var slideRemove = document.querySelector(".slider-content-one");
-var contentTwo = document.querySelector(".slider-content-two");
-var contentThree = document.querySelector(".slider-content-three");
+controls.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  slideOne.classList.add("slider-content-one");
+  slideTwo.classList.remove("slide-show");
+  slideThree.classList.remove("slide-show");
+});
 
-  /*slider*/
-  slideTwo.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    contentTwo.classList.add("slider-show");
-    slideRemove.classList.add("slider-remove");
-  });
+noActiveTwo.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  slideTwo.classList.add("slide-show");
+  slideOne.classList.remove("slide-show");
+  slideOne.classList.remove("slider-content-one");
+  slideThree.classList.remove("slide-show");
+});
 
-  slideThree.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    contentThree.classList.add("slider-show");
-    slideRemove.classList.add("slider-remove");
-  });
-  /*slider*/
+noActiveThree.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  slideThree.classList.add("slide-show");
+  slideOne.classList.remove("slide-show");
+  slideOne.classList.remove("slider-content-one");
+  slideTwo.classList.remove("slide-show");
+});
