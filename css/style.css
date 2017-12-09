@@ -31,7 +31,7 @@
 }
 
 body {
-  width: 100%;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Gilroy-Extra-bold", Arial, sans-serif;
@@ -895,9 +895,9 @@ img {
 
 /*======block services======*/
 .services-wrapper {
-  background-color: #e5e5e5;
   height: 288px;
   margin-bottom: 94px;
+  background-color: #e5e5e5;
 }
 
 .services {
@@ -1298,8 +1298,8 @@ img {
   display: flex;
   padding: 0;
   margin: 0;
-  min-height: 323px;
   background-color: #464646;
+  min-height: 323px;
 }
 
 .footer-user {
@@ -1307,8 +1307,19 @@ img {
 }
 
 .footer-conditions {
+  position: relative;
   width: 210px;
   margin-right: 138px;
+}
+
+.footer-conditions::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
 }
 
 .footer-social-net {
