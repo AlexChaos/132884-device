@@ -75,7 +75,7 @@ img {
   text-align: center;
   display: inline-block;
   color: #000000;
-  font-family: "Gilroy-Extra-bold";
+  font-family: "Gilroy-Extra-bold", Arial, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 2.15px;
@@ -166,8 +166,8 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  padding-top: 40px;
-  margin-bottom: 25px;
+  padding-top: 38px;
+  margin-bottom: 28px;
   list-style: none;
   font-family: "Open-Sans-Light";
   font-size: 15px;
@@ -195,11 +195,11 @@ img {
   padding-left: 26px;
 }
 
-.header-service-list input {
+.header-service-list .search-form-field {
   font-family: "Open-Sans-Light";
   font-size: 15px;
   font-weight: 300;
-  line-height: 36px;
+  padding-bottom: 10px;
   letter-spacing: 0.15px;
   border: none;
   cursor: pointer;
@@ -359,7 +359,7 @@ img {
 .header-service-search::before {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 30px;
   left: 63px;
   width: 27px;
   height: 34px;
@@ -384,7 +384,7 @@ img {
 .login::before {
   content: "";
   position: absolute;
-  top: 28px;
+  top: 30px;
   right: 48px;
   width: 27px;
   height: 34px;
@@ -610,7 +610,7 @@ img {
   margin-top: 80px;
   margin-bottom: 23px;
   font-size: 47px;
-  letter-spacing: 0.17px;
+  letter-spacing: 0.7px;
   z-index: 2;
 }
 
@@ -895,8 +895,7 @@ img {
 
 /*======block services======*/
 .services-wrapper {
-  height: 288px;
-  margin-bottom: 94px;
+  margin-bottom: 90px;
   background-color: #e5e5e5;
 }
 
@@ -1097,7 +1096,7 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 95px;
 }
 
 .brands-list {
