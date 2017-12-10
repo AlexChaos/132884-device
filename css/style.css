@@ -31,7 +31,7 @@
 }
 
 body {
-  min-width: 1160px;
+  min-width: 1240px;
   margin: 0;
   padding: 0;
   font-family: "Gilroy-Extra-bold", Arial, sans-serif;
@@ -1141,8 +1141,6 @@ img {
 .brands a {
   position: relative;
   display: inline-block;
-  width: 260px;
-  margin-right: 40px;
   vertical-align: baseline;
 }
 /*IE - 11*/
@@ -1316,7 +1314,7 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 15px;
   width: 80px;
   height: 7px;
   background-color: #ffc600;
