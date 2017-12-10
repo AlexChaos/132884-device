@@ -579,7 +579,7 @@ img {
 
 .slider-content-block::before,
 .slider-content-block-two::before,
- .slider-content-block-three::before {
+.slider-content-block-three::before {
   content: "";
   position: absolute;
   top: 34px;
@@ -688,27 +688,27 @@ img {
   width: 100%;
 }
 
-#slider-1:checked ~ .slider-content .slider-item:nth-child(1) {
+.slide-btn-one:checked ~ .slider-content .slider-item:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#slider-2:checked ~ .slider-content .slider-item:nth-child(2) {
+.slide-btn-two:checked ~ .slider-content .slider-item:nth-child(2) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#slider-3:checked ~ .slider-content .slider-item:nth-child(3) {
+.slide-btn-three:checked ~ .slider-content .slider-item:nth-child(3) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#slider-1:checked ~ .slider-switches .slide-btn-one::before,
-#slider-2:checked ~ .slider-switches .slide-btn-two::before,
-#slider-3:checked ~ .slider-switches .slide-btn-three::before {
+.slide-btn-one:checked ~ .slider-switches .slide-btn-one::before,
+.slide-btn-two:checked ~ .slider-switches .slide-btn-two::before,
+.slide-btn-three:checked ~ .slider-switches .slide-btn-three::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -952,15 +952,15 @@ img {
   display: none;
 }
 
-#services-btn-1:checked ~ .services-courier,
-#services-btn-2:checked ~ .services-warranty,
-#services-btn-3:checked ~ .services-credit {
+.list-btn-one:checked ~ .services-courier,
+.list-btn-two:checked ~ .services-warranty,
+.list-btn-three:checked ~ .services-credit {
   display: block;
 }
 
-#services-btn-1:checked ~ .services-courier,
-#services-btn-2:checked ~ .services-warranty,
-#services-btn-3:checked ~ .services-credit {
+.list-btn-one:checked ~ .services-courier,
+.list-btn-two:checked ~ .services-warranty,
+.list-btn-three:checked ~ .services-credit {
   display: block;
 }
 
@@ -970,18 +970,18 @@ img {
   background-position: 620px 95px;
 }
 
-#services-btn-1:checked~.services-list label[for=services-btn-1]::before,
-#services-btn-2:checked~.services-list label[for=services-btn-2]::before,
-#services-btn-3:checked~.services-list label[for=services-btn-3]::before {
+.list-btn-one:checked~.services-list label[for=services-btn-1]::before,
+.list-btn-two:checked~.services-list label[for=services-btn-2]::before,
+.list-btn-three:checked~.services-list label[for=services-btn-3]::before {
   top: 0;
   width: 280px;
   height: 100%;
   background-color: #000000;
 }
 
-#services-btn-1:checked~.services-list label[for=services-btn-1],
-#services-btn-2:checked~.services-list label[for=services-btn-2],
-#services-btn-3:checked~.services-list label[for=services-btn-3] {
+.list-btn-one:checked~.services-list label[for=services-btn-1],
+.list-btn-two:checked~.services-list label[for=services-btn-2],
+.list-btn-three:checked~.services-list label[for=services-btn-3] {
   color: #f7e184;
 }
 
