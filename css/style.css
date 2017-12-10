@@ -31,7 +31,7 @@
 }
 
 body {
-  min-width: 1240px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Gilroy-Extra-bold", Arial, sans-serif;
@@ -1480,7 +1480,7 @@ img {
   padding-top: 20px;
 }
 
-.footer-social-menu {
+.footer-socset-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1497,22 +1497,22 @@ img {
   letter-spacing: 3.6px;
 }
 
-.footer-social-menu a {
+.footer-socset-menu a {
   color: #ffffff;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 3.6px;
 }
 
-.footer-social-menu a:hover {
+.footer-socset-menu a:hover {
   opacity: 0.6;
 }
 
-.footer-social-menu a:active {
+.footer-socset-menu a:active {
   opacity: 0.3;
 }
 
-.footer-social-menu a:focus {
+.footer-socset-menu a:focus {
   outline: none;
   -webkit-box-shadow:
   0 0 0 2px #ffffff,
@@ -1522,7 +1522,7 @@ img {
   0 0 0 3px #000000;
 }
 
-.social-buttons {
+.socset-buttons {
   width: 141px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1537,7 +1537,7 @@ img {
   padding-left: 160px;
 }
 
-.social-button {
+.socset-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1580,19 +1580,19 @@ img {
   background-position: -85px -10px;
 }
 
-.social-button:hover {
+.socset-button:hover {
   opacity: 0.6;
 }
 
-.social-button:active {
+.socset-button:active {
   opacity: 0.1;
 }
 
-.footer-social a {
+.footer-social-net a {
   color: #ffffff;
 }
 
-.social-button:focus {
+.socset-buttons:focus {
   outline: none;
   -webkit-box-shadow:
   0 0 0 2px #ffffff,

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -84,19 +84,19 @@
           <section class="filter">
             <h2 class="visually-hidden">Форма</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
-                <legend>Стоимость</legend>
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="toggle toggle-min" tabindex="0" aria-label="меньше"></div>
-                    <div class="toggle toggle-max" tabindex="0" aria-label="больше"></div>
+            <fieldset>
+              <legend>Стоимость</legend>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
                   </div>
-                  <div class="selected-price">
-                    <span class="price-position-zero">от 0</span>
-                    <span class="price-position">до 5000</span>
-                  </div>
+                  <div class="toggle toggle-min" tabindex="0" aria-label="меньше"></div>
+                  <div class="toggle toggle-max" tabindex="0" aria-label="больше"></div>
+                </div>
+                <div class="selected-price">
+                  <span class="price-position-zero">от 0</span>
+                  <span class="price-position">до 5000</span>
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
@@ -147,18 +147,18 @@
             <div class="catalog-item-wrapper">
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
-                  <div class="catalog-item-image">
-                    <img class="image-object" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                    <div class="catalog-overlay">
-                      <h2 class="visually-hidden">Корзина</h2>
-                      <button class="button">В корзину</button>
-                      <p class="add-to">Добавить к сравнению</p>
-                    </div>
+                <div class="catalog-item-image">
+                  <img class="image-object" src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                  <div class="catalog-overlay">
+                    <h2 class="visually-hidden">Корзина</h2>
+                    <button class="button">В корзину</button>
+                    <p class="add-to">Добавить к сравнению</p>
                   </div>
-                  <p class="catalog-item-price">
-                    <a class="catalog-description" href="amateur-selfie.html">Любительская селфи-палка</a>
-                    <span class="price">500 руб.</span>
-                  </p>
+                </div>
+                <p class="catalog-item-price">
+                  <a class="catalog-description" href="amateur-selfie.html">Любительская селфи-палка</a>
+                  <span class="price">500 руб.</span>
+                </p>
               </article>
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
@@ -171,10 +171,11 @@
                     </div>
                   </div>
                   <p class="catalog-item-price">
-                    <a class="catalog-description" href="professional-stick.html">Профессиональная<br> селфи-палка</a>
-                    <span class="price">1500 руб.</span>
-                  </p>
+                  <a class="catalog-description" href="professional-stick.html">Профессиональная<br> селфи-палка</a>
+                  <span class="price">1500 руб.</span>
+                </p>
               </article>
+
               <article class="catalog-item">
                 <h2 class="visually-hidden">Каталог товаров</h2>
                   <div class="catalog-item-image">
@@ -186,9 +187,9 @@
                     </div>
                   </div>
                   <p class="catalog-item-price">
-                    <a class="catalog-description" href="unsinkable-stick.html">Непотопляемая селфи-палка</a>
-                    <span class="price">2500 руб.</span>
-                  </p>
+                  <a class="catalog-description" href="unsinkable-stick.html">Непотопляемая селфи-палка</a>
+                  <span class="price">2500 руб.</span>
+                </p>
               </article>
               <article class="catalog-item new">
                 <h2 class="visually-hidden">Каталог товаров</h2>
@@ -201,9 +202,9 @@
                     </div>
                   </div>
                   <p class="catalog-item-price">
-                    <a class="catalog-description" href="follow-me-stick.html">Селфи-палка "Следуй за<br> мной"</a>
-                    <span class="price">4900 руб.</span>
-                  </p>
+                  <a class="catalog-description" href="follow-me-stick.html">Селфи-палка "Следуй за<br> мной"</a>
+                  <span class="price">4900 руб.</span>
+                </p>
               </article>
             </div>
 
@@ -232,15 +233,15 @@
           </section>
           <section class="footer-social-net">
             <h2 class="visually-hidden">Мы в соцсетях</h2>
-            <ul class="footer-social-menu">
+            <ul class="footer-socset-menu">
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Гарантия</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
-            <ul class="social-buttons">
-              <li><a class="social-button social-facebook" href="#" aria-label="Фейсбук"></a></li>
-              <li><a class="social-button social-instagram" href="#" aria-label="Инстаграм"></a></li>
-              <li><a class="social-button social-twitter" href="#" aria-label="Твиттер"></a></li>
+            <ul class="socset-buttons">
+              <li><a class="socset-button social-facebook" href="#" aria-label="Фейсбук"></a></li>
+              <li><a class="socset-button social-instagram" href="#" aria-label="Инстаграм"></a></li>
+              <li><a class="socset-button social-twitter" href="#" aria-label="Твиттер"></a></li>
             </ul>
           </section>
           <section class="footer-user">
@@ -258,6 +259,6 @@
           </div>
         </div>
       </footer>
-    <script src="js/min.script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
