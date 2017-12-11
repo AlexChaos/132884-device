@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <div class="container">
-      <header class="header-main">
-        <a class="header-main-logo">device</a>
-        <ul class="header-service-list">
-          <li class="header-service-search">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
-              <input type="submit" name="submit" value="Найти">
-            </form>
+
+  <header class="header-main container">
+    <a class="header-main-logo">device</a>
+      <ul class="header-service-list">
+        <li class="header-service-search">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <input class="search-form-field" type="search" name="search" placeholder="Поиск по сайту">
+            <input type="submit" name="submit" value="Найти">
+          </form>
           </li>
           <li class="header-service-input">
             <button class="login" type="submit">Войти</button>
@@ -44,7 +44,6 @@
           </ul>
         </nav>
       </header>
-    </div>
 
     <main class="main-container">
       <h1 class="visually-hidden">Магазин гаджетов "Девайс"</h1>
@@ -124,7 +123,7 @@
               </div>
               <div class="slider-content-block-three">
                 <div class="slider-device">
-                  <h2 class="slider-title">Порхает как бабочка,<br> жалит как пчела!</h2>
+                  <h2 class="slider-title slider-title-copter">Порхает как бабочка, жалит как пчела!</h2>
                   <span class="slide-number">03</span>
                   <p class="slider-text">
                     Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -168,7 +167,7 @@
                 <img src="img/popular-2.svg" width="86" height="117" alt="Моноподы для селфи">
               </div>
             </a>
-            <a class="products-link-active" href="#">Моноподы<br>для селфи</a>
+            <a class="products-link-active link-selfie" href="#">Моноподы для селфи</a>
           </li>
           <li>
             <a class="products-link" href="#">
@@ -338,7 +337,6 @@
       <section class="modal modal-contact">
         <h2 class="visually-hidden">Форма связи</h2>
         <button class="modal-close" type="button">Закрыть</button>
-        <!--Форма-->
         <form class="communication-form container-form" name="modal-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="communication-item">
             <label for="name">Ваше имя:</label>
